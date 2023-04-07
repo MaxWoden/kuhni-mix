@@ -1,0 +1,125 @@
+@import url("media.css");
+.catalog{
+    text-align: center;
+}
+.catalog-info{
+    margin: 72px 0 51px;
+    position: relative;
+    text-align: left;
+}
+p{
+    font-size: 16px;
+}
+.catalog-info h1{
+    margin-bottom: 26px;
+}
+.catalog_filter{
+    position: absolute;
+    right: 0;
+    top: 13px;
+    color: var(--gray);
+    user-select: none;
+    cursor: pointer;
+    min-width: 262px;
+    min-height: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 30px;
+    padding: 10px 15px 10px 30px;
+    appearance: none;
+    background: #F0F0F0;
+}
+
+#catalog_filter_default{
+    background-image: none;
+}
+
+#catalog_filter_decrease{
+    background: #F0F0F0 url("../img/arrow-down.png") no-repeat 95%;
+}
+
+#catalog_filter_increase{
+    background: #F0F0F0 url("../img/arrow-up.png") no-repeat 95%;
+}
+
+.models-popular{
+    margin-bottom: 59px !important;
+    gap: 30px;
+}
+.catalog__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 360px;
+    height: 66px;
+    margin: 0 auto 60px auto;
+}
+.catalog-btn:hover,
+.catalog-btn:active,
+.catalog-btn:focus{
+    box-shadow: 5px 5px 20px rgba(216, 166, 27, 0.4);
+}
+
+@media screen and (width <= 1200px){
+    .catalog-info{
+        margin: 61px 0;
+    }
+    .models-popular{
+        grid-template-columns: repeat(2, 344px);
+        gap: 22px 20px;
+    }
+    .catalog-filter{
+        min-width: 329px;
+        padding: 20px 20px 20px 45px;
+    }
+    .catalog-filter p{
+        font-size: 18px;
+    }
+    .catalog-filter img{
+        width: 13px;
+        height: 14px;
+    }
+}
+@media screen and (width <= 750px){
+    .models-popular{
+        grid-template-columns: 345px;
+    }
+}
+@media screen and (width <= 650px){
+    .catalog-info{
+        margin: 48px 0 40px;
+        text-align: center;
+    }
+    .catalog-info h1{
+        font-size: 22px;
+        margin-bottom: 26px;
+    }
+    .catalog_info__count{
+        color: #222;
+        margin-bottom: 40px;
+    }
+    .catalog_filter{
+        position: relative;
+        justify-content: space-between;
+        gap: 0;
+        padding: 20px;
+        width: 100%;
+    }
+    .catalog_filter p{
+        margin: 0;
+    }
+    .catalog_filter p{
+        font-size: 18px;
+    }
+    .catalog_filter img{
+        height: 10px;
+        width: 10px;
+    }
+}
+
+
+
+
+
+
+

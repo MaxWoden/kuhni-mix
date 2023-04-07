@@ -1,0 +1,30 @@
+@import url("nullstyle.css");
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.pp-main{
+    padding: 50px 30px;
+    height: 100%;
+    width: 100%;
+    background: #b0b0b0;
+    color: #333;
+}
+.pp-main__heading{
+    text-align: center;
+    font: 900 32px sans-serif;
+    color: #000;
+    margin-bottom: 40px;
+}
+.pp-main_list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+.pp-main_list__item{
+    font: 500 16px sans-serif;
+    color: #333;
+}
+

@@ -1,0 +1,2537 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/media.css" />
+        <link rel="shortcut icon" href="../img/logo.ico" />
+        <title>Kuhni Mix</title>
+    </head>
+    <body class="preload">
+        
+        <!-- СКРИПТ ДЛЯ НОРМАЛЬНОЙ АНИМАЦИИ ПРИ ЗАРГУЗКЕ САЙТА И ИЗМЕНЕНИЯ РАЗМЕРОВ ОКНА (ШОБЫ ЁБАНЫЙ СЛАЙДЕР НА ШАТАЛСЯ) -->
+        <script>
+            document.body.classList.remove("preload");
+            let resizeTimer;
+            window.addEventListener("resize", () => {
+                document.body.classList.add("preload");
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(() => {
+                    document.body.classList.remove("preload");
+                }, 400);
+            });
+            
+        </script>
+
+        <header class="header">
+            <section class="header-contact">
+                <div class="wrapper">
+                    <a
+                        href="https://goo.gl/maps/Vh5Wfv7ERETXqThK6"
+                        target="_blank"
+                    >
+                        <img src="../img/svg/gps.svg" alt="gps" />
+                        г. Нижневартовск, ул. Индустриальная, д.7 стр. 1 ТЦ
+                        “ВДНХ”, 2 этаж, бутик № 20а
+                    </a>
+                    <a href="tel: +73466681598" target="_blank">
+                        <img src="../img/svg/phone.svg" alt="phone" />
+                        +7 (3466) 68-15-98
+                    </a>
+                </div>
+            </section>
+            <section class="header-nav">
+                <div class="wrapper">
+                    <a class="header-logo" href="index.html"
+                        ><img src="../img/svg/logo.svg" alt="Кухни Микс"
+                    /></a>
+                    <a href="catalog.html">Каталог товаров</a>
+                    <a href="kitchen-modules.html">Кухонные модули</a>
+                    <a href="decors.html">Декоры </a>
+                    <a href="photo-printing.html">Фотопечать</a>
+                    <a href="ready-decisions.html">Готовые решения</a>
+                    <a href="contacts.html">Контакты</a>
+                    <a href="tel: +73466681598" class="header-phone">
+                        <img src="../img/svg/phone-yellow.svg" alt="phone" />
+                        <h1>+7 (3466) 68-15-98</h1>
+                    </a>
+                    <button class="call-btn">Заказать звонок</button>
+                    <a
+                        href="https://goo.gl/maps/Vh5Wfv7ERETXqThK6"
+                        target="_blank"
+                        class="header-address"
+                    >
+                        <img src="../img/svg/gps-yellow.svg" alt="gps" />
+                        <h1>
+                            г. Нижневартовск, ул. Индустриальная, д.7 стр. 1 ТЦ
+                            “ВДНХ”, 2 этаж, бутик № 20а
+                        </h1>
+                    </a>
+                    <div class="burger">
+                        <span></span>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <main class="main">
+            <div class="intro">
+                <div class="intro-textbox">
+                    <h1>
+                        Кухни в Нижневартовске от производителя -
+                        <span>недорого и надёжно!</span>
+                    </h1>
+                    <h2>
+                        Изготовим и доставим кухонный гарнитур в Излучинск,
+                        Мегион, Стрежевой, Лангепас, Радужный и другие города
+                        ХМАО
+                    </h2>
+                    <ul class="intro-advantages">
+                        <li>
+                            <div>
+                                <img
+                                    src="../img/svg/money-trade.svg"
+                                    alt="Рассрочка без переплаты"
+                                />
+                            </div>
+                            <h3>Рассрочка без переплаты!</h3>
+                        </li>
+                        <li>
+                            <div>
+                                <img
+                                    src="../img/svg/ruler.svg"
+                                    alt="Бесплатный замер и дизайн проект"
+                                />
+                            </div>
+                            <h3>Бесплатный замер и дизайн проект</h3>
+                        </li>
+                        <li>
+                            <div>
+                                <img
+                                    src="../img/svg/facade.svg"
+                                    alt="Более 500 цветов фасадов"
+                                />
+                            </div>
+                            <h3>Более 500 цветов фасадов</h3>
+                        </li>
+                        <li>
+                            <div>
+                                <img
+                                    src="../img/svg/clock.svg"
+                                    alt="Соблюдение сроков изготовления"
+                                />
+                            </div>
+                            <div>
+                                <h3>Соблюдение сроков изготовления</h3>
+                                <p>
+                                    Если не выполним в срок - мы заплатим Вам
+                                    неустойку
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="intro-price">
+                        <button class="call-btn btn-yellow">
+                            Рассчитать стоимость
+                        </button>
+                        <div class="intro-bonus">
+                            <img src="../img/svg/gift.svg" alt="gift" />
+                            <h3>
+                                Пройдите тест из 5 вопросов и получите дизайн
+                                проект, и расчет стоимость кухни
+                            </h3>
+                            <p>+ гарантированный подарок при заказе кухни!</p>
+                        </div>
+                    </div>
+                </div>
+                <img
+                    class="intro-img"
+                    src="../img/intro-kitchen.png"
+                    alt="Кухни в Нижневартовске от производителя - недорого и надёжно!"
+                />
+            </div>
+
+            <div class="constructor">
+                <div class="wrapper">
+                    <h1><span>ОНЛАЙН</span> КОНСТРУКТОР КУХНИ</h1>
+                    <div class="constructor-explanation">
+                        Перед вами самый современный онлайн конструктор кухни. С
+                        его помощью вы сможете создать онлайн 3D проект своей
+                        кухни с высокой степенью визуализации.
+                    </div>
+                    <img
+                        src="../img/constructor.jpg"
+                        alt="Онлайн Конструктор"
+                    />
+                </div>
+            </div>
+
+            <div class="models">
+                <div class="wrapper">
+                    <h1>ПОПУЛЯРНЫЕ МОДЕЛИ</h1>
+                    <ul class="models-popular">
+                        <li class="models-item">
+                            <div class="models_item-img">
+                                <img
+                                    class="models__img"
+                                    src="../img/popular-models-1.jpg"
+                                    alt="Кухонный гарнитур “ЛОФТ”. Длина 2 метра."
+                                />
+                            </div>
+                            <div class="models_item-about">
+                                <h2 class="models__name">
+                                    Кухонный гарнитур “ЛОФТ”. Длина 2 метра.
+                                </h2>
+                                <h2 class="models__price-old">26 899 ₽</h2>
+                                <h2 class="models__price-new">17 900 ₽</h2>
+                                <div class="models-add">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="models-item">
+                            <div class="models_item-img">
+                                <img
+                                    class="models__img"
+                                    src="../img/popular-models-2.jpg"
+                                    alt="Кухонный гарнитур с фотопечатью “Орхидея”. Длина 2 метра."
+                                />
+                            </div>
+                            <div class="models_item-about">
+                                <h2 class="models__name">
+                                    Кухонный гарнитур “ОРХИДЕЯ”. Длина 2,3
+                                    метра.
+                                </h2>
+                                <h2 class="models__price-old">19 899 ₽</h2>
+                                <h2 class="models__price-new">14 900 ₽</h2>
+                                <div class="models-add">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="models-item">
+                            <div class="models_item-img">
+                                <img
+                                    class="models__img"
+                                    src="../img/popular-models-3.jpg"
+                                    alt="Кухонный гарнитур “ЛОФТ”. Длина 2 метра."
+                                />
+                            </div>
+                            <div class="models_item-about">
+                                <h2 class="models__name">
+                                    Кухонный гарнитур “БЛУМ”. Длина 2,3 метра.
+                                </h2>
+                                <h2 class="models__price-old">15 199 ₽</h2>
+                                <h2 class="models__price-new">13 900 ₽</h2>
+                                <div class="models-add">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="models-item">
+                            <div class="models_item-img">
+                                <img
+                                    class="models__img"
+                                    src="../img/popular-models-4.jpg"
+                                    alt="Кухонный гарнитур “ЛОФТ”. Длина 2 метра."
+                                />
+                            </div>
+                            <div class="models_item-about">
+                                <h2 class="models__name">
+                                    Кухонный гарнитур “КТЕФЕ”. Длина 2,7 метра.
+                                </h2>
+                                <h2 class="models__price-old">14 799 ₽</h2>
+                                <h2 class="models__price-new">13 900 ₽</h2>
+                                <div class="models-add">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="models-item">
+                            <div class="models_item-img">
+                                <img
+                                    class="models__img"
+                                    src="../img/popular-models-5.jpg"
+                                    alt="Кухонный гарнитур “ЛОФТ”. Длина 2 метра."
+                                />
+                            </div>
+                            <div class="models_item-about">
+                                <h2 class="models__name">
+                                    Кухонный гарнитур “ДУБРЁЗА”. Длина 2 метра.
+                                </h2>
+                                <h2 class="models__price-old">13 999 ₽</h2>
+                                <h2 class="models__price-new">10 900 ₽</h2>
+                                <div class="models-add">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="models-item">
+                            <div class="models_item-img">
+                                <img
+                                    class="models__img"
+                                    src="../img/popular-models-6.jpg"
+                                    alt="Кухонный гарнитур “ЛОФТ”. Длина 2 метра."
+                                />
+                            </div>
+                            <div class="models_item-about">
+                                <h2 class="models__name">
+                                    Кухонный гарнитур “КЛИМ”. Длина 1,7 метра.
+                                </h2>
+                                <h2 class="models__price-old">13 299 ₽</h2>
+                                <h2 class="models__price-new">9 900 ₽</h2>
+                                <div class="models-add">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="catalog.html" class="models__btn btn-green"
+                        >Смотреть все товары</a
+                    >
+                </div>
+            </div>
+
+            <div class="styles">
+                <div class="wrapper">
+                    <h1>Выбор <span>кухни по стилям</span></h1>
+                    <h2>
+                        Красивые, удобные и современные, кухни на заказ помогают
+                        создавать атмосферу уюта и комфорта в помещении. Вы
+                        хотите воплотить в жизнь мечты об удобном гарнитуре? Мы
+                        готовы вам в этом помочь.
+                    </h2>
+                    <div class="styles-choose">
+                        <h3>Выберите стиль:</h3>
+                        <ul class="styles_tabs-container">
+                            <li class="styles_tabs-title">Эконом</li>
+                            <li class="styles_tabs-title">Маленькие</li>
+                            <li class="styles_tabs-title">Классика</li>
+                            <li class="styles_tabs-title">Скандинавский</li>
+                            <li class="styles_tabs-title">Минимализм</li>
+                            <li class="styles_tabs-title">Хай-тек</li>
+                            <li class="styles_tabs-title">Лофт</li>
+                            <li class="styles_tabs-title">Прованс</li>
+                        </ul>
+                    </div>
+
+                    <div class="styles_tabs-wrapper">
+                        <div class="styles_tabs-content">
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/styles-1.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/styles-2.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/styles-3.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/styles-4.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/styles-5.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/styles-6.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="styles_tabs-content">
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/popular-models-1.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/popular-models-2.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/popular-models-3.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/popular-models-4.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/popular-models-5.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/popular-models-6.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="styles_tabs-content">
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/popular-models-1.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/popular-models-2.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/popular-models-3.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/styles-1.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/styles-2.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/styles-3.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="styles_tabs-content">
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/popular-models-1.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/popular-models-2.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/popular-models-3.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/styles-4.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/styles-5.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/styles-6.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="styles_tabs-content">
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/popular-models-4.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/popular-models-5.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/popular-models-6.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/styles-1.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/styles-2.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/styles-3.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="styles_tabs-content">
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/popular-models-4.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/popular-models-5.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/popular-models-6.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/styles-4.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/styles-5.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/styles-6.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="styles_tabs-content">
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/styles-1.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/styles-2.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/styles-3.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/popular-models-1.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/popular-models-2.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/popular-models-3.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="styles_tabs-content">
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/styles-1.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/styles-2.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/styles-3.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/popular-models-4.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/popular-models-5.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="styles_tab-item">
+                                <img
+                                    class="styles_tab-img"
+                                    src="../img/popular-models-6.jpg"
+                                    alt="kitchen"
+                                />
+                                <div class="styles_tab-search">
+                                    <img
+                                        src="../img/svg/search.svg"
+                                        alt="search"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <button class="styles_tabs-btn">Показать еще</button>
+                    </div>
+
+                    <div class="styles_contact-wrapper">
+                        <div class="styles_contact">
+                            <h1>
+                                Есть замер или эскиз кухни, или просто нашли
+                                фото кухни в интернете которая Вам нравится?
+                            </h1>
+                            <h2>
+                                Отправьте его нам и мы посчитаем стоимость с
+                                учетом Ваших пожеланий!
+                            </h2>
+                            <form class="styles_contact-form">
+                                <input type="text" placeholder="Ваше имя" />
+                                <input
+                                    type="tel"
+                                    pattern="(7[0-9]{10})"
+                                    placeholder="+7(_ _ _) _ _ _-_ _ - _ _ "
+                                    required
+                                />
+                                <div class="styles_form-sketch">
+                                    <label class="styles_form-file">
+                                        <img
+                                            src="../img/svg/clip.svg"
+                                            alt="clip"
+                                        />
+                                        <input type="file" />
+                                    </label>
+                                    <p>Вы можете приложить эскиз или фото</p>
+                                </div>
+                                <div class="styles_form-btn-wrapper">
+                                    <button
+                                        type="submit"
+                                        class="styles_form-btn btn-yellow"
+                                    >
+                                        Рассчитать стоимость
+                                    </button>
+                                    <a
+                                        href="privacy-policy.html"
+                                        target="_blank"
+                                        class="styles_form-btn-wrapper_conditions"
+                                    >
+                                        Нажимая кнопку “Рассчитать стоимость”,
+                                        вы соглашаетесь с условиями Политики
+                                        конфиденциальности
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                        <img
+                            class="styles_contact__img"
+                            src="../img/styles-form-kitchen.png"
+                            alt="kitchen sketch"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <div class="quiz">
+                <div class="wrapper">
+                    <section class="quiz_header">
+                        <h1 class="quiz_header__heading">
+                            Пройдите тест за 1 минуту и
+                            <span>узнайте стоимость</span> вашей будущей кухни
+                            прямо сейчас
+                        </h1>
+                        <p class="quiz_gift">
+                            <img
+                                class="quiz_gift__img"
+                                src="../img/svg/gift.svg"
+                                alt="gift"
+                            />
+                            И получите один из подарков при заказе кухни.
+                        </p>
+                    </section>
+
+                    <ul class="quiz_content">
+                        <li class="quiz__item quiz_halfbox">
+                            <div class="quiz__total"><span>0</span>/5</div>
+                            <div class="quiz_halfbox__img-wrapper">
+                                <img src="../img/quiz-img.jpg" alt="kitchen" />
+                            </div>
+                            <div class="quiz_start">
+                                <div class="quiz__line_yellow"></div>
+                                <h1 class="quiz__heading">
+                                    Ответьте на 5 вопросов и получите дизайн
+                                    проект и расчет стоимость кухни
+                                </h1>
+                                <p class="quiz__about">
+                                    <span>+</span> гарантированый подарок при
+                                    заказе кухни!
+                                </p>
+                                <button
+                                    class="quiz__btn-next quiz__btn-orange quiz_start__btn"
+                                >
+                                    Узнать стоимость
+                                </button>
+                            </div>
+                        </li>
+
+                        <li class="quiz__item">
+                            <div class="quiz__total"><span>1</span>/5</div>
+                            <div class="quiz__wrapper">
+                                <h1 class="quiz__answer">
+                                    Какое <span>расположение кухни</span> вас
+                                    интересует
+                                </h1>
+                                <form action="" class="quiz_form-layout">
+                                    <div class="quiz_test-layout">
+                                        <input
+                                            oninvalid="alert('Выберите интересующее вас расположение кухни')"
+                                            value="../img/layout-1-size.jpg"
+                                            name="layout"
+                                            id="layout-1"
+                                            type="radio"
+                                            class="quiz__input"
+                                            required
+                                        />
+                                        <label
+                                            for="layout-1"
+                                            class="quiz_layout"
+                                        >
+                                            <div
+                                                class="quiz_test__checkpoint"
+                                            ></div>
+                                            <h1 class="quiz_layout__title">
+                                                Прямая
+                                            </h1>
+                                            <img
+                                                class="quiz_layout__img"
+                                                src="../img/layout-1.jpg"
+                                                alt="Прямая"
+                                            />
+                                        </label>
+                                        <input
+                                            value="../img/layout-2-size.jpg"
+                                            name="layout"
+                                            id="layout-2"
+                                            type="radio"
+                                            class="quiz__input"
+                                            required
+                                        />
+                                        <label
+                                            for="layout-2"
+                                            class="quiz_layout"
+                                        >
+                                            <div
+                                                class="quiz_test__checkpoint"
+                                            ></div>
+                                            <h1 class="quiz_layout__title">
+                                                Угловая
+                                            </h1>
+                                            <img
+                                                class="quiz_layout__img"
+                                                src="../img/layout-2.jpg"
+                                                alt="Прямая"
+                                            />
+                                        </label>
+                                        <input
+                                            value="../img/layout-3-size.jpg"
+                                            name="layout"
+                                            id="layout-3"
+                                            type="radio"
+                                            class="quiz__input"
+                                            required
+                                        />
+                                        <label
+                                            for="layout-3"
+                                            class="quiz_layout"
+                                        >
+                                            <div
+                                                class="quiz_test__checkpoint"
+                                            ></div>
+                                            <h1 class="quiz_layout__title">
+                                                П-образная
+                                            </h1>
+                                            <img
+                                                class="quiz_layout__img"
+                                                src="../img/layout-3.jpg"
+                                                alt="Прямая"
+                                            />
+                                        </label>
+                                    </div>
+                                    <div class="quiz_nav">
+                                        <button
+                                            type="button"
+                                            class="quiz_nav__btn-back"
+                                        >
+                                            ←
+                                        </button>
+                                        <button
+                                            type="submit"
+                                            class="quiz__btn-orange quiz_nav__btn-next"
+                                        >
+                                            Далее →
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <li class="quiz__item">
+                            <div class="quiz__total"><span>2</span>/5</div>
+                            <div class="quiz__wrapper">
+                                <h1 class="quiz__answer">
+                                    Введите <span>размеры</span>кухни:
+                                </h1>
+
+                                <div class="quiz_size__test">
+                                    <img
+                                        class="quiz_size__img"
+                                        src="../img/layout-1-size.jpg"
+                                        alt="layout size"
+                                    />
+                                    <ul class="quiz_size__list">
+                                        <li class="quiz_size__item">
+                                            <div class="quiz_size__features">
+                                                <h1 class="quiz_size__title">
+                                                    Сторона А (см)
+                                                </h1>
+                                                <div class="quiz_size__data">
+                                                    <!-- JavaScript Data -->
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="quiz_size__slider quiz_size__slider-1"
+                                            >
+                                                <!-- Module Slider -->
+                                            </div>
+                                        </li>
+                                        <li class="quiz_size__item">
+                                            <div class="quiz_size__features">
+                                                <h1 class="quiz_size__title">
+                                                    Сторона B (см)
+                                                </h1>
+                                                <div class="quiz_size__data">
+                                                    <!-- JavaScript Data -->
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="quiz_size__slider quiz_size__slider-2"
+                                            >
+                                                <!-- Module Slider -->
+                                            </div>
+                                        </li>
+                                        <li class="quiz_size__item">
+                                            <div class="quiz_size__features">
+                                                <h1 class="quiz_size__title">
+                                                    Сторона C (см)
+                                                </h1>
+                                                <div class="quiz_size__data">
+                                                    <!-- JavaScript Data -->
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="quiz_size__slider quiz_size__slider-3"
+                                            >
+                                                <!-- Module Slider -->
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="quiz_nav">
+                                    <button
+                                        type="button"
+                                        class="quiz_nav__btn-back"
+                                    >
+                                        ←
+                                    </button>
+                                    <button
+                                        type="submit"
+                                        class="quiz__btn-next quiz__btn-orange quiz_nav__btn-next"
+                                    >
+                                        Далее →
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="quiz__item">
+                            <div class="quiz__total"><span>3</span>/5</div>
+                            <div class="quiz__wrapper">
+                                <h1 class="quiz__answer text-align_left">
+                                    Выберите <span>бытовую технику</span>,
+                                    которая будет установлена на кухне
+                                </h1>
+                                <p class="quiz__detailed">
+                                    Выберите один или несколько вариантов
+                                </p>
+                                <form class="quiz_furniture">
+                                    <input
+                                        id="furniture-1"
+                                        type="checkbox"
+                                        class="quiz__input"
+                                    />
+                                    <label
+                                        for="furniture-1"
+                                        class="quiz_furniture__item"
+                                    >
+                                        <div
+                                            class="quiz_test__checkpoint quiz_furniture__checkpoint"
+                                        >
+                                            1
+                                        </div>
+                                        <img
+                                            class="quiz_furniture__img"
+                                            src="../img/quiz-furniture-1.jpg"
+                                            alt="Встроенный духовой шкаф и варочная поверхность"
+                                        />
+                                        <h1 class="quiz_furniture__title">
+                                            Встроенный духовой шкаф и варочная
+                                            поверхность
+                                        </h1>
+                                    </label>
+                                    <input
+                                        id="furniture-2"
+                                        type="checkbox"
+                                        class="quiz__input"
+                                    />
+                                    <label
+                                        for="furniture-2"
+                                        class="quiz_furniture__item"
+                                    >
+                                        <div
+                                            class="quiz_test__checkpoint quiz_furniture__checkpoint"
+                                        >
+                                            2
+                                        </div>
+                                        <img
+                                            class="quiz_furniture__img"
+                                            src="../img/quiz-furniture-2.jpg"
+                                            alt="Отдельно стоящая плита"
+                                        />
+                                        <h1 class="quiz_furniture__title">
+                                            Отдельно стоящая плита
+                                        </h1>
+                                    </label>
+                                    <input
+                                        id="furniture-3"
+                                        type="checkbox"
+                                        class="quiz__input"
+                                    />
+                                    <label
+                                        for="furniture-3"
+                                        class="quiz_furniture__item"
+                                    >
+                                        <div
+                                            class="quiz_test__checkpoint quiz_furniture__checkpoint"
+                                        >
+                                            3
+                                        </div>
+                                        <img
+                                            class="quiz_furniture__img"
+                                            src="../img/quiz-furniture-3.jpg"
+                                            alt="Встроеная посудомоечная машинка"
+                                        />
+                                        <h1 class="quiz_furniture__title">
+                                            Встроеная посудомоечная машинка
+                                        </h1>
+                                    </label>
+                                    <input
+                                        id="furniture-4"
+                                        type="checkbox"
+                                        class="quiz__input"
+                                    />
+                                    <label
+                                        for="furniture-4"
+                                        class="quiz_furniture__item"
+                                    >
+                                        <div
+                                            class="quiz_test__checkpoint quiz_furniture__checkpoint"
+                                        >
+                                            4
+                                        </div>
+                                        <img
+                                            class="quiz_furniture__img"
+                                            src="../img/quiz-furniture-4.jpg"
+                                            alt="Холодильник"
+                                        />
+                                        <h1 class="quiz_furniture__title">
+                                            Холодильник
+                                        </h1>
+                                    </label>
+                                    <div class="quiz_nav">
+                                        <button
+                                            type="button"
+                                            class="quiz_nav__btn-back"
+                                        >
+                                            ←
+                                        </button>
+                                        <button
+                                            type="submit"
+                                            class="quiz_furniture__btn quiz__btn-orange quiz_nav__btn-next"
+                                        >
+                                            Далее →
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <li class="quiz__item">
+                            <div class="quiz__total"><span>4</span>/5</div>
+                            <div class="quiz__wrapper">
+                                <h1 class="quiz__answer">
+                                    Укажите планируемый
+                                    <span>бюджет</span> кухни
+                                </h1>
+                                <form class="quiz_budget">
+                                    <input
+                                        oninvalid="alert('Укажите планируемый бюджет кухни')"
+                                        name="budget"
+                                        id="budget-1"
+                                        type="radio"
+                                        class="quiz__input"
+                                        required
+                                    />
+                                    <label
+                                        for="budget-1"
+                                        class="quiz_budget__item"
+                                    >
+                                        <div
+                                            class="quiz_test__checkpoint quiz_budget__checkpoint"
+                                        ></div>
+                                        <h1 class="quiz_budget__price">
+                                            <span>ДО</span> 30 000 ₽
+                                        </h1>
+                                    </label>
+                                    <input
+                                        name="budget"
+                                        id="budget-2"
+                                        type="radio"
+                                        class="quiz__input"
+                                    />
+                                    <label
+                                        for="budget-2"
+                                        class="quiz_budget__item"
+                                    >
+                                        <div
+                                            class="quiz_test__checkpoint quiz_budget__checkpoint"
+                                        ></div>
+                                        <h1 class="quiz_budget__price">
+                                            <span>ОТ</span> 30 000 ₽
+                                            <span>ДО</span> 80 000 ₽
+                                        </h1>
+                                    </label>
+                                    <input
+                                        name="budget"
+                                        id="budget-3"
+                                        type="radio"
+                                        class="quiz__input"
+                                    />
+                                    <label
+                                        for="budget-3"
+                                        class="quiz_budget__item"
+                                    >
+                                        <div
+                                            class="quiz_test__checkpoint quiz_budget__checkpoint"
+                                        ></div>
+                                        <h1 class="quiz_budget__price">
+                                            <span>ОТ</span> 80 000 ₽
+                                            <span>ДО</span> 150 000 ₽
+                                        </h1>
+                                    </label>
+                                    <input
+                                        name="budget"
+                                        id="budget-4"
+                                        type="radio"
+                                        class="quiz__input"
+                                    />
+                                    <label
+                                        for="budget-4"
+                                        class="quiz_budget__item"
+                                    >
+                                        <div
+                                            class="quiz_test__checkpoint quiz_budget__checkpoint"
+                                        ></div>
+                                        <h1 class="quiz_budget__price">
+                                            <span>БОЛЕЕ</span> 150 000 ₽
+                                        </h1>
+                                    </label>
+                                    <div class="quiz_nav">
+                                        <button
+                                            type="button"
+                                            class="quiz_nav__btn-back"
+                                        >
+                                            ←
+                                        </button>
+                                        <button
+                                            type="submit"
+                                            class="quiz__btn-orange quiz_nav__btn-next"
+                                        >
+                                            Далее →
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <li class="quiz__item quiz_halfbox quiz_finish">
+                            <div class="quiz__total"><span>5</span>/5</div>
+                            <div
+                                class="quiz_halfbox__img-wrapper quiz_finish__img-wrapper"
+                            >
+                                <img
+                                    src="../img/quiz-form-img.jpg"
+                                    alt="kitchen"
+                                />
+                            </div>
+                            <div class="quiz_end">
+                                <h1 class="quiz_end__heading">
+                                    осталось только узнать, как нам с вами
+                                    связаться
+                                </h1>
+                                <form class="quiz_end__form">
+                                    <div class="quiz_end__field">
+                                        <input
+                                            id="mail"
+                                            type="email"
+                                            class="quiz_end__input"
+                                            required
+                                        />
+                                        <label
+                                            class="quiz_end__label"
+                                            for="mail"
+                                        >
+                                            <img
+                                                class="quiz_end__img"
+                                                src="../img/svg/mail-gray.svg"
+                                                alt="mail"
+                                            />
+                                            E-mail
+                                        </label>
+                                    </div>
+                                    <div class="quiz_end__field">
+                                        <input
+                                            id="name"
+                                            type="text"
+                                            class="quiz_end__input"
+                                            required
+                                        />
+                                        <label
+                                            class="quiz_end__label"
+                                            for="name"
+                                        >
+                                            <img
+                                                class="quiz_end__img"
+                                                src="../img/svg/person.svg"
+                                                alt="name"
+                                            />
+                                            Имя
+                                        </label>
+                                    </div>
+                                    <div class="quiz_end__field">
+                                        <input
+                                            pattern="(7[0-9]{10})"
+                                            id="phone"
+                                            type="tel"
+                                            class="quiz_end__input"
+                                            required
+                                        />
+                                        <label
+                                            class="quiz_end__label"
+                                            for="phone"
+                                        >
+                                            <img
+                                                class="quiz_end__img"
+                                                src="../img/svg/phone-gray.svg"
+                                                alt="phone"
+                                            />
+                                            +7 (_ _ _)_ _ _-_ _-_ _
+                                        </label>
+                                    </div>
+                                    <button
+                                        type="submit"
+                                        class="quiz__btn-orange quiz_end__btn"
+                                    >
+                                        Получить рассчет
+                                    </button>
+                                    <a
+                                        href="privacy-policy.html"
+                                        target="_blank"
+                                        class="quiz_end__conditions"
+                                    >
+                                        Нажимая кнопку “Позвоните мне”, вы
+                                        соглашаетесь с условиями Политики
+                                        конфиденциальности
+                                    </a>
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <h1 class="quiz__title"><span>Кухни Микс</span> - это :</h1>
+
+                    <section class="quiz_footer">
+                        <div class="quiz_footer__item">
+                            <img
+                                class="quiz_footer__img"
+                                src="../img/svg/money-trade.svg"
+                                alt="Рассрочка без переплаты"
+                            />
+                            <h1 class="quiz_footer__heading">
+                                Рассрочка без переплаты
+                            </h1>
+                            <p class="quiz_footer__about">
+                                Мы не делаем наценок. Наши цены заморожены с
+                                2015 года
+                            </p>
+                        </div>
+                        <div class="quiz_footer__item">
+                            <img
+                                class="quiz_footer__img"
+                                src="../img/svg/discount.svg"
+                                alt="Скидки"
+                            />
+                            <h1 class="quiz_footer__heading">Скидки</h1>
+                            <p class="quiz_footer__about">
+                                При заказе кухни матовая столешница 26 мм - в
+                                подарок!
+                            </p>
+                        </div>
+                        <div class="quiz_footer__item">
+                            <img
+                                class="quiz_footer__img"
+                                src="../img/svg/facade.svg"
+                                alt="Более 500 цветов фасадов"
+                            />
+                            <h1 class="quiz_footer__heading">
+                                Более 500 цветов фасадов
+                            </h1>
+                            <p class="quiz_footer__about">
+                                Цветовые решения на любой вкус
+                            </p>
+                        </div>
+                        <div class="quiz_footer__item">
+                            <img
+                                class="quiz_footer__img"
+                                src="../img/svg/ruler.svg"
+                                alt="Бесплатный замер и дизайн проект"
+                            />
+                            <h1 class="quiz_footer__heading">
+                                Бесплатный замер и дизайн проект
+                            </h1>
+                            <p class="quiz_footer__about">
+                                Бесплатный дизайн проект кухни за 1 день
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div class="materials">
+                <div class="wrapper">
+                    <h1 class="materials__header">
+                        Фурнитура и <span>метериалы</span>
+                    </h1>
+                    <ul class="materials_cards">
+                        <li class="materials_cards__item">
+                            <h1 class="materials_cards__title">ЛДСП</h1>
+                            <img
+                                src="../img/cards-1.png"
+                                alt="ЛДСП"
+                                class="materials_cards__img"
+                            />
+                            <p
+                                class="materials_cards__info materials_cards__info_limited"
+                            >
+                                - Хорошая устойчивость к температурным перепадам
+                                и высокой влажности.
+                            </p>
+                            <p
+                                class="materials_cards__info materials_cards__info_limited"
+                            >
+                                - Большой выбор различных цветов.
+                            </p>
+                            <p class="materials_cards__info">
+                                Как и в случае с МДФ, у ЛДСП имеется огромное
+                                разнообразие ламинированных поверхностей.
+                            </p>
+                            <p class="materials_cards__info">
+                                - Материал не деформируется в результате
+                                механических повреждений.
+                            </p>
+                            <p class="materials_cards__info">
+                                - Материал имеет хорошую устойчивость к
+                                царапинам. Кроме того, его можно чистить
+                                различными химическими средствами.
+                            </p>
+                            <button type="button" class="materials_cards__btn">
+                                Рассчитать стоимость
+                            </button>
+                        </li>
+                        <li class="materials_cards__item">
+                            <h1 class="materials_cards__title">МДФ</h1>
+                            <img
+                                src="../img/cards-2.png"
+                                alt="МДФ"
+                                class="materials_cards__img materials_cards__img_no-right-indent"
+                            />
+                            <div class="materials_cards__info">
+                                <p class="materials_cards__info_limited">
+                                    - Широкие дизайнерские возможности. Чаще
+                                    всего МДФ используют как основу, отделывая
+                                    пластиком, акрилом, различными типами
+                                </p>
+                                пленок. Это позволяет создать яркие уникальные
+                                дизайны. Часто гарнитуры из МДФ имитируют
+                                натуральное дерево, камень, металл и другие
+                                материалы.
+                            </div>
+                            <p class="materials_cards__info">
+                                - Качественная мебель из МДФ может служить до 20
+                                лет без потери свойств.
+                            </p>
+                            <p class="materials_cards__info">
+                                - МФД не капризен и не требует специальных
+                                моющих средств. Правда, необходимо учесть, что
+                                покрытие может оказаться более требовательным.
+                            </p>
+                            <button type="button" class="materials_cards__btn">
+                                Рассчитать стоимость
+                            </button>
+                        </li>
+                        <li class="materials_cards__item">
+                            <h1 class="materials_cards__title">ЭМАЛЬ</h1>
+                            <img
+                                src="../img/cards-3.png"
+                                alt="ЭМАЛЬ"
+                                class="materials_cards__img"
+                            />
+                            <div class="materials_cards__info">
+                                <p class="materials_cards__info_limited">
+                                    Все больше у покупателей становятся
+                                    популярными, кухни с крашенными фасадами.
+                                </p>
+                                Крашеные кухонные<br />фасады изготавливают из
+                                МДФ, поверхность, которой покрывается эмалью.
+                                Специальная краска и финишный слой лака
+                                обеспечивают надежную защиту от влаги,
+                                загрязнений, температурных колебаний в
+                                определенных
+                            </div>
+                            <button type="button" class="materials_cards__btn">
+                                Рассчитать стоимость
+                            </button>
+                        </li>
+                        <li class="materials_cards__item">
+                            <h1 class="materials_cards__title">
+                                фУРНИТУРА BLUM
+                            </h1>
+                            <img
+                                src="../img/cards-4.png"
+                                alt="фУРНИТУРА BLUM"
+                                class="materials_cards__img"
+                            />
+                            <p class="materials_cards__info">
+                                - Высококачественная австрийская фурнитура для
+                                современной мебели. Фурнитура «Блюм» для кухни
+                                позволяет:
+                            </p>
+                            <p class="materials_cards__info">
+                                - создавать конструкции повышенной прочности и
+                                функциональности;
+                            </p>
+                            <p class="materials_cards__info">
+                                - реализовывать любые дизайнерские задумки.
+                            </p>
+                            <button type="button" class="materials_cards__btn">
+                                Рассчитать стоимость
+                            </button>
+                        </li>
+                        <li class="materials_cards__item">
+                            <h1 class="materials_cards__title">
+                                фУРНИТУРА HETTICH
+                            </h1>
+                            <img
+                                src="../img/cards-5.png"
+                                alt="фУРНИТУРА HETTICH"
+                                class="materials_cards__img"
+                            />
+                            <p class="materials_cards__info">
+                                – это германская фурнитура с идеальным
+                                сочетанием интеллектуальных технологий,
+                                функциональности и дизайна.
+                            </p>
+                            <p class="materials_cards__info">
+                                - мебельные петли, системы ящиков, фурнитура для
+                                складных и раздвижных дверей, подъемные
+                                механизмы, соединительная фурнитура,
+                                производственная техника, механизмы и наполнение
+                                для кухонной мебели
+                            </p>
+                            <button type="button" class="materials_cards__btn">
+                                Рассчитать стоимость
+                            </button>
+                        </li>
+                        <li class="materials_cards__item">
+                            <h1 class="materials_cards__title">
+                                фУРНИТУРА BOYARD
+                            </h1>
+                            <img
+                                src="../img/cards-6.png"
+                                alt="фУРНИТУРА BOYARD"
+                                class="materials_cards__img"
+                            />
+                            <p class="materials_cards__info">
+                                Передовые технологические разработки,
+                                позволяющие выпускать качественные изделия по
+                                доступной цене.
+                            </p>
+                            <p class="materials_cards__info">
+                                Производство продукции в соответствии с
+                                международными стандартами качества. Широкий
+                                ассортимент актуальной фурнитуры для мебели и
+                                интерьеров различных стилевых направлений,
+                                разнообразные по формам, размерам, типу покрытий
+                                и назначению.
+                            </p>
+                            <button type="button" class="materials_cards__btn">
+                                Рассчитать стоимость
+                            </button>
+                        </li>
+                    </ul>
+                    <ul class="kitchens">
+                        <li class="kitchens_item">
+                            <h1 class="kitchens_item__heading">
+                                Кухни на заказ
+                            </h1>
+                            <div class="kitchens_item__wrapper">
+                                <p class="kitchens_item__info">
+                                    Красивые, удобные и современные, кухни на
+                                    заказ помогают создавать атмосферу уюта и
+                                    комфорта в помещении. Вы хотите воплотить в
+                                    жизнь мечты об удобном гарнитуре? Мы готовы
+                                    вам в этом помочь. Наша компания успешно
+                                    работает в Нижневартовске с 2015 года. Вся
+                                    мебель изготавливается на современном
+                                    оборудовании. Если вы хотите купить кухню на
+                                    заказ, мы предложим наиболее рациональное
+                                    решение и сумеем уложиться в планируемый
+                                    вами бюджет. Компания «Кухни Микс»
+                                    предлагает готовую продукцию и разработку
+                                    индивидуальных проектов кухонь. Опытные
+                                    дизайнеры могут создать эксклюзивные решения
+                                    для кухонных пространств любой площади и
+                                    конфигурации. Мы готовы работать в
+                                    рассрочку. Все документы оформляются
+                                    официально. Хотите приобрести кухню в
+                                    кредит? Мы предложим лучшие условия от
+                                    банков-партнеров.
+                                </p>
+                                <img
+                                    src="../img/kitchens-1.png"
+                                    alt="Кухни на заказ"
+                                    class="kitchens_item__img"
+                                />
+                            </div>
+                        </li>
+                        <li class="kitchens_item">
+                            <div class="kitchens_item__wrapper">
+                                <img
+                                    src="../img/kitchens-2.png"
+                                    alt="Условия доставки и сборки"
+                                    class="kitchens_item__img"
+                                />
+                                <div class="kitchens_item__container">
+                                    <h1
+                                        class="kitchens_item__heading text-aling_right"
+                                    >
+                                        Условия доставки и сборки
+                                    </h1>
+                                    <p class="kitchens_item__info">
+                                        При покупке кухни под заказ, вы
+                                        получаете не только цену от
+                                        производителя, но и доставку, а также
+                                        профессиональную сборку и установку
+                                        гарнитура в интерьере. Доставка и сборка
+                                        оплачиваются отдельно, стоимость зависит
+                                        от удаленности и сложности сборки.<br />
+                                        Кроме того, созданные по индивидуальным
+                                        размерам, модули требуют правильного
+                                        размещения в пространстве. В этом случае
+                                        справиться со сборкой и установкой
+                                        самостоятельно будет довольно трудно.
+                                        Обращение к специалистам дает
+                                        возможность не только заказать на
+                                        выгодных условиях хорошие кухни, но и
+                                        смонтировать их в течение всего одного
+                                        рабочего дня, недорого и быстро.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="kitchens_item">
+                            <div class="kitchens_item__wrapper">
+                                <div class="kitchens_item__container">
+                                    <h1 class="kitchens_item__heading">
+                                        Конструктор кухни онлайн
+                                    </h1>
+                                    <p class="kitchens_item__info">
+                                        При покупке кухни под заказ, вы
+                                        получаете не только цену от
+                                        производителя, но и доставку, а также
+                                        профессиональную сборку и установку
+                                        гарнитура в интерьере. Доставка и сборка
+                                        оплачиваются отдельно, стоимость зависит
+                                        от удаленности и сложности сборки.<br />
+                                        Кроме того, созданные по индивидуальным
+                                        размерам, модули требуют правильного
+                                        размещения в пространстве. В этом случае
+                                        справиться со сборкой и установкой
+                                        самостоятельно будет довольно трудно.
+                                        Обращение к специалистам дает
+                                        возможность не только заказать на
+                                        выгодных условиях хорошие кухни, но и
+                                        смонтировать их в течение всего одного
+                                        рабочего дня, недорого и быстро.
+                                    </p>
+                                </div>
+                                <img
+                                    src="../img/kitchens-3.png"
+                                    alt="Конструктор кухни онлайн"
+                                    class="kitchens_item__img"
+                                />
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="production">
+                <div class="wrapper">
+                    <h1 class="production__header">Производство</h1>
+                    <ul class="production_cards">
+                        <li class="production_cards__wrapper">
+                            <div class="production_cards__item">
+                                <h1 class="production_cards__title">
+                                    Соответствие производства мировым стандартам
+                                    качества
+                                </h1>
+                                <div class="production_cards__pipe">
+                                    <div class="production_cards__pipe-wrapper">
+                                        <div
+                                            class="production_cards__line"
+                                        ></div>
+                                        <div
+                                            class="production_cards__circle"
+                                        ></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="production_cards__wrapper">
+                            <div class="production_cards__item">
+                                <h1 class="production_cards__title">
+                                    Материалы ведущих мировых производителей
+                                </h1>
+                                <div class="production_cards__pipe">
+                                    <div class="production_cards__pipe-wrapper">
+                                        <div
+                                            class="production_cards__line"
+                                        ></div>
+                                        <div
+                                            class="production_cards__circle"
+                                        ></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="production_cards__wrapper">
+                            <div class="production_cards__item">
+                                <h1 class="production_cards__title">
+                                    Производство на высокоточном оборудовании
+                                </h1>
+                                <div class="production_cards__pipe">
+                                    <div class="production_cards__pipe-wrapper">
+                                        <div
+                                            class="production_cards__line"
+                                        ></div>
+                                        <div
+                                            class="production_cards__circle"
+                                        ></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="production_cards__wrapper">
+                            <div class="production_cards__item">
+                                <h1 class="production_cards__title">
+                                    Наличие отдела технического контроля готовой
+                                    продукции
+                                </h1>
+                                <div class="production_cards__pipe">
+                                    <div class="production_cards__pipe-wrapper">
+                                        <div
+                                            class="production_cards__line"
+                                        ></div>
+                                        <div
+                                            class="production_cards__circle"
+                                        ></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="works">
+                <div class="wrapper">
+                    <h1 class="works__header">Наши <span>работы</span></h1>
+                    <div class="slider-wrapper">
+                        <button
+                            type="button"
+                            class="slider-wrapper_btn slider-wrapper_btn_prev"
+                        >
+                            <img
+                                src="../img/svg/arrow-left_yellow.svg"
+                                alt="left"
+                                class="slider-wrapper_btn__arrow"
+                            />
+                        </button>
+                        <button
+                            type="button"
+                            class="slider-wrapper_btn slider-wrapper_btn_next"
+                        >
+                            <img
+                                src="../img/svg/arrow-right_yellow.svg"
+                                alt="right"
+                                class="slider-wrapper_btn__arrow"
+                            />
+                        </button>
+                        <div class="slider">
+                            <div class="slider_line">
+                                <img
+                                    src="../img/slider-1.png"
+                                    alt="Наша работа"
+                                    class="slider__item"
+                                />
+                                <img
+                                    src="../img/slider-2.png"
+                                    alt="Наша работа"
+                                    class="slider__item"
+                                />
+                                <img
+                                    src="../img/slider-3.png"
+                                    alt="Наша работа"
+                                    class="slider__item"
+                                />
+                                <img
+                                    src="../img/slider-4.png"
+                                    alt="Наша работа"
+                                    class="slider__item"
+                                />
+                                <img
+                                    src="../img/slider-5.png"
+                                    alt="Наша работа"
+                                    class="slider__item"
+                                />
+                                <img
+                                    src="../img/slider-6.png"
+                                    alt="Наша работа"
+                                    class="slider__item"
+                                />
+                                <img
+                                    src="../img/slider-7.png"
+                                    alt="Наша работа"
+                                    class="slider__item"
+                                />
+                                <img
+                                    src="../img/slider-8.png"
+                                    alt="Наша работа"
+                                    class="slider__item"
+                                />
+                                <img
+                                    src="../img/slider-9.png"
+                                    alt="Наша работа"
+                                    class="slider__item"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="consult">
+            <div class="consult-wrapper">
+                <div class="consult-content">
+                    <h1><span>ПРОКОНСУЛЬТИРУЕМ</span> ПО ЛЮБЫМ ВОПРОСАМ</h1>
+                    <form class="consult-form" action="">
+                        <input type="text" placeholder="Ваше имя" />
+                        <input
+                            type="tel"
+                            pattern="(7[0-9]{10})"
+                            placeholder="+7(_ _ _) _ _ _-_ _ - _ _ "
+                            required
+                        />
+                        <textarea
+                            placeholder="Кратко опишите Ваш вопрос"
+                        ></textarea>
+                        <button class="consult__btn btn-yellow">
+                            Получить консультацию
+                        </button>
+                        <a
+                            href="privacy-policy.html"
+                            target="_blank"
+                            class="consult-form__conditions"
+                        >
+                            Нажимая кнопку "Получить консультацию" вы даете
+                            согласие на обработку персональных данных в
+                            соответствии с политикой конфиденциальности
+                        </a>
+                    </form>
+                </div>
+                <img
+                    class="consult-img"
+                    src="../img/consult-kitchen.png"
+                    alt="kitchen"
+                />
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="wrapper">
+                <ul class="footer-content">
+                    <li class="footer-company">
+                        <a href="index.html"
+                            ><img src="../img/svg/logo.svg" alt="Kuhni Mix"
+                        /></a>
+                        <a
+                            href="https://goo.gl/maps/Vh5Wfv7ERETXqThK6"
+                            target="_blank"
+                            ><p>
+                                г. Нижневартовск, ул. Индустриальная, д.7 стр. 1
+                                ТЦ “ВДНХ”, 2 этаж, бутик № 20а
+                            </p></a
+                        >
+                    </li>
+                    <li class="footer-nav">
+                        <h2>Разделы :</h2>
+                        <a href="catalog.html" class="footer_nav-item"
+                            ><p>Каталог товаров</p></a
+                        >
+                        <a href="kitchen-modules.html" class="footer_nav-item"
+                            ><p>Кухонные модули</p></a
+                        >
+                        <a href="decors.html" class="footer_nav-item"
+                            ><p>Декоры МДФ/Лдсп</p></a
+                        >
+                        <a href="ready-decision.html" class="footer_nav-item"
+                            ><p>Готовые решения</p></a
+                        >
+                    </li>
+                    <li class="footer-contact">
+                        <h2>Контакты :</h2>
+                        <a
+                            class="footer_contact-item"
+                            href="https://e.mail.ru/uhninv@mail.ru"
+                            target="_blank"
+                        >
+                            <img src="../img/svg/mail.svg" alt="mail" />
+                            <p>uhninv@mail.ru</p>
+                        </a>
+                        <a
+                            class="footer_contact-item"
+                            href="https://vk.com/kuhninv"
+                            target="_blank"
+                        >
+                            <img src="../img/svg/vk.svg" alt="vk" />
+                            <p>vk.com/kuhninv</p>
+                        </a>
+                        <a
+                            class="footer_contact-item"
+                            href="tel: 83466682015"
+                            target="_blank"
+                        >
+                            <img src="../img/svg/phone-green.svg" alt="mail" />
+                            <p>8 (3466) 68-20-15</p>
+                        </a>
+                        <a
+                            class="footer_contact-item"
+                            href="https://ok.ru/kuhninv"
+                            target="_blank"
+                        >
+                            <img src="../img/svg/ok.svg" alt="ok" />
+                            <p>ok.ru/kuhninv</p>
+                        </a>
+                        <a
+                            class="footer_contact-item"
+                            href="tel: 83466681598"
+                            target="_blank"
+                        >
+                            <img src="../img/svg/phone-green.svg" alt="mail" />
+                            <p>8 (3466) 68-15-98</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+        <div class="popup popup-success">
+            <div class="popup_body popup-success_body">
+                <div class="popup__close">
+                    <div class="popup__close_nail"></div>
+                </div>
+                <img
+                    class="popup__checkmark"
+                    src="../img/svg/checkmark-yellow.svg"
+                    alt="checkmark"
+                />
+                <h1>Заявка отправлена!</h1>
+                <p>
+                    Благодарим Вас! Наш специалист свяжется с вами по телефону в
+                    ближайшее время для уточнения деталей.
+                </p>
+            </div>
+        </div>
+
+        <div class="popup popup-call">
+            <div class="popup_body popup-call_body">
+                <div class="popup__close">
+                    <div class="popup__close_nail"></div>
+                </div>
+                <h1>Заказать звонок</h1>
+                <p class="popup-call_body__phone">
+                    <img src="../img/svg/phone-green.svg" alt="phone" />
+                    Вы можете задать любой интересующий Вас вопрос, уточнить
+                    цены, вызвать замерщика, проконсультироваться о продукции.
+                </p>
+                <form class="popup-call_body_form">
+                    <input
+                        class="popup-call_body__input"
+                        type="text"
+                        placeholder="Ваше имя"
+                    />
+                    <input
+                        class="popup-call_body__input"
+                        type="tel"
+                        pattern="(7[0-9]{10})"
+                        placeholder="+7(_ _ _) _ _ _-_ _ - _ _ "
+                        required
+                    />
+                    <button class="popup-call_body_form__btn">
+                        Позвоните мне
+                    </button>
+                </form>
+                <a
+                    href="privacy-policy.html"
+                    target="_blank"
+                    class="popup-call_body_form__conditions"
+                >
+                    Нажимая кнопку “Позвоните мне”, вы соглашаетесь с
+                    условиями<br />
+                    <span>Политики конфиденциальности</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="popup popup-model">
+            <div class="popup_body popup-model_body">
+                <div class="popup__close popup-model__close">
+                    <div
+                        class="popup__close_nail popup-model__close_nail"
+                    ></div>
+                </div>
+                <div class="popup-model_body_imgbox">
+                    <img
+                        class="popup-model_body__mainimg"
+                        src="../img/popup-model-img.jpg"
+                        alt="kitchen"
+                    />
+                    <div class="popup-model_body_imglist">
+                        <img
+                            class="popup-model_body__img popup-model__img"
+                            src="../img/popup-model-img.jpg"
+                            alt="kitchen"
+                        />
+                        <img
+                            class="popup-model__img"
+                            src="../img/popup-model-sketch.jpg"
+                            alt="kitchen sketch"
+                        />
+                        <img
+                            class="popup-model__img"
+                            src="../img/popup-model-material.jpg"
+                            alt="kitchen material"
+                        />
+                        <img
+                            class="popup-model__img"
+                            src="../img/popup-model-material-2.jpg"
+                            alt="kitchen material"
+                        />
+                    </div>
+                </div>
+                <div class="popup-model_body_info">
+                    <h1 class="popup-model_body__name">
+                        Кухонный гарнитур “Шимо”. Длина 1.2 метра.
+                    </h1>
+                    <div class="popup-model_body_info_tabs-titles">
+                        <p
+                            data-tab="popup-model_tab-1"
+                            class="popup-model_body__title"
+                        >
+                            Описание
+                        </p>
+                        <p
+                            data-tab="popup-model_tab-2"
+                            class="popup-model_body__title"
+                        >
+                            Характеристики
+                        </p>
+                    </div>
+                    <div class="popup-model_body_info_tabs-content">
+                        <div
+                            id="popup-model_tab-1"
+                            class="popup-model_body__item"
+                        >
+                            <p>
+                                Компактная длина кухонного гарнитура “Шимо”,
+                                составляющая всего лишь 1,2 метра, позволит
+                                расположить его даже в совсем крошечных
+                                помещениях. Случается, что для кухни нет
+                                отдельного помещения. Она бывает совмещена со
+                                столовой или гостиной. Данный комплект – именно
+                                тот необходимый минимум мебели, который нужен.
+                                Он достаточно вместительный и очень практичный.
+                                Нейтральная расцветка фасадов и корпуса идеально
+                                сочетается с любой окружающей обстановкой. Два
+                                верхних шкафа и две нижние тумбы, оборудованные
+                                широкими полками, составляют готовый набор.
+                            </p>
+                        </div>
+                        <div
+                            id="popup-model_tab-2"
+                            class="popup-model_body__item"
+                        >
+                            <p><span>Материал корпуса:</span>ЛДСП,</p>
+                            <p><span>цвет корпуса:</span>БЕЛЫЙ,</p>
+                            <p>
+                                <span>Материал фасадов:</span>Шимо тёмный/шимо
+                                светлый.
+                            </p>
+                            <p>
+                                <span>Длина кухонного гаринтура:</span>1.2
+                                метра.
+                            </p>
+
+                            <div class="popup-model_body__item-separate">
+                                <p><span>Кухня включает в себя:</span></p>
+                                <p>- Стол на 600 мм, со столешницей - 2шт.</p>
+                                <p>- Шкаф верхний на 600 мм (с полкой) 2шт.</p>
+                            </div>
+                            <p>
+                                <span
+                                    >Ножки-опоры регулируемые, пластиковые, цвет
+                                    – серебро. Ручки – пластик. Мойка в
+                                    комплектацию не входит! Товар доставляется в
+                                    упаковке, схема сборки прилагается!</span
+                                >
+                            </p>
+                        </div>
+                    </div>
+                    <div class="popup-model_body_purchase">
+                        <div class="popup-model_body__price">
+                            <p class="popup-model_body__price-old">75 620₽</p>
+                            <p class="popup-model_body__price-new">69 620₽</p>
+                        </div>
+                        <button class="popup-model_body__bth btn-yellow">
+                            Отставить заявку
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup_body popup-model_application">
+                <div
+                    class="popup__close popup-model__close popup-model-application__close"
+                >
+                    <div
+                        class="popup__close_nail popup-model__close_nail"
+                    ></div>
+                </div>
+                <h1 class="popup-model_application__heading">
+                    Оставить заявку
+                </h1>
+                <div class="popup-model_product">
+                    <img
+                        class="popup-model_product__img"
+                        src="../img/popup-model-img.jpg"
+                        alt="kitchen"
+                    />
+                    <div class="popup-model_product__description">
+                        <h1 class="popup-model_product__name">
+                            Кухонный гарнитур “Шимо”. Длина 1.2 метра.
+                        </h1>
+                        <p
+                            class="popup-model_body__price-old popup-model_product__price-old"
+                        >
+                            75 620₽
+                        </p>
+                        <p
+                            class="popup-model_body__price-new popup-model_product__price-new"
+                        >
+                            69 620₽
+                        </p>
+                    </div>
+                </div>
+                <form class="popup-call_body_form popup-model__form">
+                    <input
+                        class="popup-call_body__input popup-model_application__input"
+                        type="text"
+                        placeholder="Ваше имя"
+                    />
+                    <input
+                        class="popup-call_body__input popup-model_application__input"
+                        type="tel"
+                        pattern="(7[0-9]{10})"
+                        placeholder="+7(_ _ _) _ _ _-_ _ - _ _ "
+                        required
+                    />
+                    <button
+                        class="popup-call_body_form__btn popup-model_application__btn"
+                    >
+                        Оставить заявку
+                    </button>
+                </form>
+                <a
+                    href="privacy-policy.html"
+                    target="_blank"
+                    class="popup-call_body_form__conditions"
+                >
+                    Нажимая кнопку “Позвоните мне”, вы соглашаетесь с
+                    условиями<br />
+                    <span>Политики конфиденциальности</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="popup popup-material">
+            <div class="popup_body popup-material_body">
+                <div class="popup__close">
+                    <div class="popup__close_nail"></div>
+                </div>
+                <h1 class="popup-material_body__heading">
+                    Рассчитать стоимость
+                </h1>
+                <form class="popup-material_body_form">
+                    <input
+                        class="popup-call_body__input"
+                        type="text"
+                        placeholder="Ваше имя"
+                    />
+                    <input
+                        class="popup-call_body__input"
+                        type="tel"
+                        pattern="(7[0-9]{10})"
+                        placeholder="+7(_ _ _) _ _ _-_ _ - _ _ "
+                        required
+                    />
+                    <div class="popup-material_product">
+                        <div>
+                            <img
+                                class="popup-material_product__img"
+                                src="../img/cards-1.png"
+                                alt="kitchen"
+                            />
+                        </div>
+                        <h1 class="popup-material_product__title">
+                            Кухни из лдсп
+                        </h1>
+                    </div>
+                    <button class="popup-call_body_form__btn">
+                        Позвоните мне
+                    </button>
+                </form>
+                <a
+                    href="privacy-policy.html"
+                    target="_blank"
+                    class="popup-call_body_form__conditions"
+                >
+                    Нажимая кнопку “Позвоните мне”, вы соглашаетесь с
+                    условиями<br />
+                    <span>Политики конфиденциальности</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="popup popup-style">
+            <div class="popup_body popup-style_body">
+                <button
+                    ype="button"
+                    class="popup-style_slider-wrapper_btn_prev popup-style_slider-wrapper_btn"
+                >
+                    <img
+                        src="../img/svg/arrow-left_white.svg"
+                        alt="left"
+                        class="slider-wrapper_btn__arrow"
+                    />
+                </button>
+                <button
+                    type="button"
+                    class="popup-style_slider-wrapper_btn_next popup-style_slider-wrapper_btn"
+                >
+                    <img
+                        src="../img/svg/arrow-right_white.svg"
+                        alt="right"
+                        class="slider-wrapper_btn__arrow"
+                    />
+                </button>
+                <div class="popup-style_slider-wrapper">
+                    <div class="popup__close popup-style__close">
+                        <div
+                            class="popup__close_nail popup-style__close_nail"
+                        ></div>
+                    </div>
+                    <div class="popup-style_slider">
+                        <div class="popup-style_slider__line">
+                        </div>
+                    </div>
+                    <div class="popup-style_form-wrapper">
+                        <h1 class="popup-style_form-wrapper__heading">
+                            Хотите рассчитаем эту кухню с учетом Ваших
+                            пожеланий?
+                        </h1>
+                        <p class="popup-style_form-wrapper__paragraph">
+                            Оставьте заявку и мы ответим вам уже скоро
+                        </p>
+                        <form class="popup-style_form">
+                            <input
+                                type="text"
+                                class="popup-style_form__input"
+                                placeholder="Ваше имя"
+                            />
+                            <input
+                                type="tel"
+                                class="popup-style_form__input"
+                                placeholder="+7(_ _ _) _ _ _-_ _ - _ _ "
+                                pattern="(7[0-9]{10})"
+                                required
+                            />
+                            <div class="popup-style_form__btn-wrapper">
+                                <button
+                                    class="popup-style_form__btn btn-yellow"
+                                >
+                                    Рассчитать стоимость
+                                </button>
+                                <a
+                                    href="privacy-policy.html"
+                                    target="_blank"
+                                    class="popup-style_form__conditions"
+                                    >Нажимая кнопку “Рассчитать стоимость”, вы
+                                    соглашаетесь с условиями Политики
+                                    конфиденциальности</a
+                                >
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn-up hidden">
+            <img src="../img/arrow-up.png" alt="up" class="btn-up__img" />
+        </button>
+    </body>
+
+    <script src="../modules/noUiSlider-15.7.0/nouislider.min.js"></script>
+    <script src="../js/scrollBtn.js"></script>
+    <script src="../js/burger.js"></script>
+    <script src="../js/popup.js"></script>
+    <script src="../js/tabs.js"></script>
+    <script src="../js/quiz.js"></script>
+    <script src="../js/slider.js"></script>
+</html>
