@@ -1,33 +1,27 @@
-
 function bindTabs(tabsTitleSelector,tabsContentSelector,tabsTitleActiveClass,pageLoadActiveTab = 0){
-    const tabsTitle = document.querySelectorAll(tabsTitleSelector);
-    const tabsContent = document.querySelectorAll(tabsContentSelector);
-    tabsContent.forEach(element => element.classList.add("hidden"));
-    for(let i = 0; i < tabsTitle.length; i++){
-        let item = tabsTitle[i];
-        item.addEventListener("click", ()=> {
-            if(item.classList.contains(tabsTitleActiveClass))
-                return;
-            tabsTitle.forEach(element => element.classList.remove(tabsTitleActiveClass));
-            tabsTitle[i].classList.add(tabsTitleActiveClass);
+    const tabsTitles = document.querySelectorAll(tabsTitleSelector);
+    const tabsContents = document.querySelectorAll(tabsContentSelector);
+    tabsContents.forEach(element => element.classList.add("hidden"));
+    for(let i = 0; i < tabsTitles.length; i++){
+        let item = tabsTitles[i];
+        item.addEventListener("click", () =>{
+            if(item.classList.contains(tabsTitleActiveClass)) return;
+            tabsTitles.forEach(element => element.classList.remove(tabsTitleActiveClass));
+            tabsTitles[i].classList.add(tabsTitleActiveClass);
 
-            tabsContent.forEach(element => element.classList.add("hidden"));
-            tabsContent[i].classList.remove("hidden");
+            tabsContents.forEach(element => element.classList.add("hidden"));
+            tabsContents[i].classList.remove("hidden");
         })
-        tabsTitle[pageLoadActiveTab].classList.add(tabsTitleActiveClass);
-        tabsContent[pageLoadActiveTab].classList.remove("hidden");
+        tabsTitles[pageLoadActiveTab].click();
     }
 };
 
-bindTabs
-    (
+bindTabs(
     tabsTitleSelector = ".styles_tabs-title",
     tabsContentSelector =".styles_tabs-content",
     tabsTitleActiveClass = "active-tab"
 );
-
-bindTabs
-(
+bindTabs(
     tabsTitleSelector = ".popup-model_body__title",
     tabsContentSelector = ".popup-model_body__item",
     tabsTitleActiveClass = "popup-model_body__title_active"
@@ -35,19 +29,16 @@ bindTabs
 bindTabs(
     tabsTitleSelector = ".pp-main_titles__item",
     tabsContentSelector = ".pp-main_content__item",
-    tabsTitleActiveClass = "pp-main_titles__item_active",
-    1
+    tabsTitleActiveClass = "pp-main_titles__item_active"
 );
-
-
 
 
 if(document.querySelector(".styles_tabs-content")){
     let tabTitles = document.querySelectorAll(".styles_tabs-title");
-    let tabContens = document.querySelectorAll(".styles_tabs-content");
+    let tabContents = document.querySelectorAll(".styles_tabs-content");
 
     document.querySelector(".styles_tabs-btn").addEventListener("click", () => {
-        tabContens.forEach(item =>{
+        tabContents.forEach(item =>{
             let tabItems = item.querySelectorAll(".styles_tab-item");
             tabItems.forEach(item => item.classList.remove("hidden"));
             document.querySelector(".styles_tabs-btn").classList.add("hidden");
@@ -55,12 +46,12 @@ if(document.querySelector(".styles_tabs-content")){
     });
 
     let styleSliderLine = document.querySelector(".popup-style_slider__line");
-    for(let i = 0; i < tabContens[0].querySelectorAll(".styles_tab-img").length; i++){
-        styleSliderLine.insertAdjacentHTML('beforeend', `<img class="popup-style__img" src="${tabContens[0].querySelectorAll(".styles_tab-img")[i].src}" alt="kitchen">`);
+    for(let i = 0; i < tabContents[0].querySelectorAll(".styles_tab-img").length; i++){
+        styleSliderLine.insertAdjacentHTML('beforeend', `<img class="popup-style__img" src="${tabContents[0].querySelectorAll(".styles_tab-img")[i].src}" alt="kitchen">`);
     }
 
     for(let i = 0; i < tabTitles.length; i++){
-        let tabImages = tabContens[i].querySelectorAll(".styles_tab-img");
+        let tabImages = tabContents[i].querySelectorAll(".styles_tab-img");
         tabTitles[i].addEventListener("click", () =>{
             for(let j = 0; j < tabImages.length; j++){
                 document.querySelectorAll(".popup-style__img")[j].src = tabImages[j].src; 
@@ -70,7 +61,7 @@ if(document.querySelector(".styles_tabs-content")){
 
     window.addEventListener("resize", event =>{
         if(event.target.window.innerWidth > 1200){
-            tabContens.forEach(content => {
+            tabContents.forEach(content => {
                 content.querySelectorAll(".styles_tab-item").forEach(item => item.classList.remove("hidden"));
             })
         }
@@ -80,7 +71,7 @@ if(document.querySelector(".styles_tabs-content")){
     
     function response1(){
         if(window.innerWidth < 1200){
-            tabContens.forEach(item => {
+            tabContents.forEach(item => {
                 let tabItems = item.querySelectorAll(".styles_tab-item");
                 tabItems.forEach(item => item.classList.remove("hidden"));
                 for(let i = 4; i < tabItems.length; i++){
@@ -95,7 +86,7 @@ if(document.querySelector(".styles_tabs-content")){
     
     function response2(){
         if(window.innerWidth <= 750){
-            tabContens.forEach(item => {
+            tabContents.forEach(item => {
                 let tabItems = item.querySelectorAll(".styles_tab-item");
                 tabItems.forEach(item => item.classList.remove("hidden"));
                 for(let i = 3; i < tabItems.length; i++){
@@ -108,6 +99,3 @@ if(document.querySelector(".styles_tabs-content")){
     }
     response2();
 }
-
-
-

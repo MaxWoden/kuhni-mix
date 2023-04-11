@@ -23,7 +23,7 @@ button {
 }
 
 .text-align_left {
-  text-align: left;
+  text-align: left !important;
 }
 
 .wrapper {
