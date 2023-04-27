@@ -1,1 +1,1 @@
-# Многостраничный сайт магазина КУХНИ МИКС 
+# Multi-page website of the kitchen furniture store "KUHNI MIX"
